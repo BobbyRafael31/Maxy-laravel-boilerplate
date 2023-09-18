@@ -31,11 +31,9 @@
                         <a class="btn btn-xs btn-info" href="{{ route('admin.products.edit', [$product->id]) }}" data-toggle="tooltip" data-placement="top" data-title="{{ __('views.admin.products.index.edit') }}">
                             <i class="fa fa-pencil"></i>
                         </a>
-                        @if(!$product->hasRole('administrator'))
-                            <a href="{{ route('admin.products.destroy', [$product->id]) }}" class="btn btn-xs btn-danger product_destroy" data-toggle="tooltip" data-placement="top" data-title="{{ __('views.admin.products.index.delete') }}">
-                                <i class="fa fa-trash"></i>
-                            </a>
-                        @endif
+                        <a href="{{ route('admin.products.destroy', [$product->id]) }}" class="btn btn-xs btn-danger product_destroy" data-toggle="tooltip" data-placement="top" data-title="{{ __('views.admin.products.index.delete') }}">
+                            <i class="fa fa-trash"></i>
+                        </a>
                     </td>
                 </tr>
             @endforeach
