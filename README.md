@@ -11,20 +11,7 @@
 
 # Laravel Boilerplate Project
 
-_Laravel Boilerplate_ provides a very flexible and extensible way of building your custom Laravel applications.
-
-## Table of Contents
-
-- [Features](#features)
-- [Theme Demo](#theme-demo)
-- [System Requirements](#system-requirements)
-- [Installation](#installation)
-- [Run](#run)
-- [Docker](#docker) :point_left:
-- [How To's & Modules configuration](#how-tos--modules-configuration)
-- [How to contribute](#how-to-contribute)
-- [Bugs and Feedback](#bugs-and-feedback)
-- [License](#license)
+Learning how to use laravel boilerplate. This is part of Maxy Academy course that I'm learning right now.
 
 ## Features
 - Administration Dashboard with [Gentelella Admin Theme](https://github.com/puikinsh/gentelella)
@@ -65,11 +52,6 @@ _Laravel Boilerplate_ provides a very flexible and extensible way of building yo
 - JavaScript / CSS minification
 - JavaScript / CSS hashing
 - Some very useful helper functions to ease your live :)
-
-## Theme Demo
-![Gentelella Bootstrap Admin Template](https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/gentelella-admin-template-preview.jpg "Gentelella Theme Browser Preview")
-
-**[Gentelella Admin Theme Demo](https://colorlib.com/polygon/gentelella/index.html)**
 
 ## System Requirements
 To be able to run Laravel Boilerplate you have to meet the following requirements:
@@ -138,83 +120,6 @@ $ php -S localhost:8080 -t public/
 ```
 
 Now you can browse the site at [http://localhost:8080](http://localhost:8080)  🙌
-
-## Docker
-
-Here is a Docker based local development environment prepared, which provides a very flexible and extensible way of building your custom Laravel applications.
-
-### What's Inside
-This project is based on [docker-compose](https://docs.docker.com/compose/). By default, the following containers are started: _laravel-env (centos:7 based), mysql, nginx_. Additional containers (_phpmyadmin, mailhog_) are externalized into `docker-compose.utils.yml`. The `/var/www/laravel-boilerplate` directory is the web root which is mapped to the nginx container.
-You can directly edit configuration files from within the repo as they are mapped to the correct locations in containers.
-
-<p align="center"><img src="https://raw.githubusercontent.com/Labs64/laravel-boilerplate/master/dockerfiles/img/laravel-boilerplate-docker.png" alt="Laravel Boilerplate Docker"></p>
-
-### System Requirements
-To be able to run Laravel Boilerplate you have to meet the following requirements:
-* [docker](https://www.docker.com)
-* [docker-compose](https://docs.docker.com/compose/)
-
-### Run
-
-1. Clone repository
-```
-$ git clone https://github.com/Labs64/laravel-boilerplate.git
-```
-
-2. Copy `.env.example` to `.env` and modify according to your environment (make sure database host set to `DB_HOST=mysql`)
-```
-$ cp .env.example .env
-```
-
-3. Start environment
-```
-$ docker-compose up -d  # to start base containers
-or
-$ docker-compose -f docker-compose.yml -f docker-compose.utils.yml up -d  # to start base and utils containers
-```
-
-4. Build project
-```
-$ docker exec laravel-boilerplate_laravel-env_1 ./dockerfiles/bin/prj-build.sh
- or
-$ docker-compose run --rm laravel-boilerplate_laravel-env_1 ./dockerfiles/bin/prj-build.sh
-```
-
-Now you can browse the site at [http://localhost:80](http://localhost:80)  🙌
-
----
-
-5. Stop environment
-```
-$ docker-compose down
- or
-$ docker-compose -f docker-compose.yml -f docker-compose.utils.yml down
-```
-
-## How To's & Modules configuration
-
-Check out project [wiki](https://github.com/Labs64/laravel-boilerplate/wiki) pages for modules configuration and troubleshooting.
-For more detailed instructions on how to use Laravel and it's extensions, check out the full Laravel [documentation](https://laravel.com/docs/).
-
-## How to contribute
-
-Fork the repository, read the [CONTRIBUTE](CONTRIBUTE.md) file and make some changes.
-Once you're done with your changes send a pull request and check [CI validation status](https://travis-ci.org/Labs64/laravel-boilerplate).
-Thanks!
-
-### Contributors and Supporters
-
-Thank you to all the [contributors](https://github.com/Labs64/laravel-boilerplate/graphs/contributors) on this project. Your help is much appreciated!
-
-- [Clever Kids](https://clever-kids.eu?utm_source=Laravel_Boilerplate&utm_medium=github&utm_campaign=laravel_boilerplate&utm_content=readme) team for a great support in project structuring.
-- [GuideChimp](https://www.labs64.com/guidechimp/) - A simple, lightweight, clean and small library for creating guided product tours for your web app.
-- [PluginPass – WordPress PRO Plugin/Theme Licensing](https://wordpress.org/plugins/pluginpass-pro-plugintheme-licensing/) - Easily control the use and monetize your WordPress plugins and themes
-- [@veerajongit](https://github.com/veerajongit) - a package that does the testing automatically every time the code or the test changes
-- [@rainerkent](https://github.com/rainerkent) - Update to Laravel 6
-
-## Bugs and Feedback
-
-For bugs, questions and discussions please use the [GitHub Issues](https://github.com/Labs64/laravel-boilerplate/issues).
 
 ## License
 
