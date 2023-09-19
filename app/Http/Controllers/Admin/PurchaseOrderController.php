@@ -17,15 +17,15 @@ class PurchaseOrderController extends Controller
     }
 
     public function getProductShow(){
-        return view('admin.products.index');
+
     }
 
     public function getProductEdit(){
-        return view('admin.products.index');
+
     }
 
     public function getProductDestroy(){
-        return view('admin.products.index');
+
     }
 
     public function getPurchaseOrderLineList(){
