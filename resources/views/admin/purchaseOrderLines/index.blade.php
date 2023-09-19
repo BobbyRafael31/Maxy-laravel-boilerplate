@@ -36,13 +36,16 @@
                     <td>{{ $purchaseOrderLine->created_at }}</td>
                     <td>{{ $purchaseOrderLine->updated_at }}</td>
                     <td>
-                        <a class="btn btn-xs btn-primary" href="{{ route('admin.purchase.order.lines.show', [$purchaseOrderLine->id]) }}" data-toggle="tooltip" data-placement="top" data-title="{{ __('views.admin.purchase.order.lines.index.show') }}">
+                        <a class="btn btn-xs btn-primary" href="{{ route('admin.purchase.order.lines.show', [$purchaseOrderLine->id]) }}" 
+                        data-toggle="tooltip" data-placement="top" data-title="{{ __('views.admin.purchase.order.lines.index.show') }}">
                             <i class="fa fa-eye"></i>
                         </a>
-                        <a class="btn btn-xs btn-info" href="{{ route('admin.purchase.order.lines.edit', [$purchaseOrderLine->id]) }}" data-toggle="tooltip" data-placement="top" data-title="{{ __('views.admin.purchase.order.lines.index.edit') }}">
+                        <a class="btn btn-xs btn-info" href="{{ route('admin.purchase.order.lines.edit', [$purchaseOrderLine->id]) }}" 
+                        data-toggle="tooltip" data-placement="top" data-title="{{ __('views.admin.purchase.order.lines.index.edit') }}">
                             <i class="fa fa-pencil"></i>
                         </a>
-                        <a href="{{ route('admin.purchase.order.lines.destroy', [$purchaseOrderLine->id]) }}" class="btn btn-xs btn-danger product_destroy" data-toggle="tooltip" data-placement="top" data-title="{{ __('views.admin.purchase.order.lines.index.delete') }}">
+                        <a href="{{ route('admin.purchase.order.lines.destroy', [$purchaseOrderLine->id]) }}" class="btn btn-xs btn-danger product_destroy" 
+                        data-toggle="tooltip" data-placement="top" data-title="{{ __('views.admin.purchase.order.lines.index.delete') }}">
                             <i class="fa fa-trash"></i>
                         </a>
                     </td>
